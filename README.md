@@ -1,6 +1,5 @@
 # Owasp.Untrust.BoxedPath (.NET)
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/owasp-untrust/boxed_path_cs/build.yml?branch=main)
 [![NuGet](https://img.shields.io/nuget/v/Owasp.Untrust.BoxedPath)](https://www.nuget.org/packages/Owasp.Untrust.BoxedPath)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
 
@@ -120,11 +119,12 @@ using (var stream = new BoxedFileStream(safePath, FileMode.Open))
 If you must use an API that strictly requires a `string` path:
 
 ```csharp
-// ValidateAndExpose re-runs checks and returns the raw physical path string.
+// ValidateAndExpose either relies on previous validation (for an absolute path) or validates the path.
+// The raw physical path string is returned.
 // Use this result IMMEDIATELY and do not store it.
 string rawPath = safePath.ValidateAndExpose(); 
 
-System.IO.File.Delete(rawPath);
+System.IO.File.Delete(rawPath); // Note that this is only for example purposes! Better use BoxedFile.Delete(safePath);
 ```
 
 ## Advanced Configuration
@@ -146,7 +146,7 @@ var looseSandbox = PathSandbox.BoxRoot("/data", SandboxJailbreak.UNCHECKED_SYMLI
 To prevent infinite loops or Denial of Service (DoS) via "symlink bombs," you can limit the recursion depth.
 
 ```csharp
-// Limit to 20 link hops (Default is 10)
+// Limit to 20 link hops (Default is 5)
 var deepSandbox = PathSandbox.BoxRoot("/data", SandboxJailbreak.DISALLOW, maxLinkFollows: 20);
 ```
 
