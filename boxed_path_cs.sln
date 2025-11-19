@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boxed_path_cs", "boxed_path_cs.csproj", "{5FAE0DED-9ECB-F9F8-21D4-75F4FEB094AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boxed_path_cs_tests", "tests\boxed_path_cs_tests.csproj", "{AD96FADA-3212-7982-6545-2FFCD4E0BC8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FAE0DED-9ECB-F9F8-21D4-75F4FEB094AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FAE0DED-9ECB-F9F8-21D4-75F4FEB094AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FAE0DED-9ECB-F9F8-21D4-75F4FEB094AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FAE0DED-9ECB-F9F8-21D4-75F4FEB094AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD96FADA-3212-7982-6545-2FFCD4E0BC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD96FADA-3212-7982-6545-2FFCD4E0BC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD96FADA-3212-7982-6545-2FFCD4E0BC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD96FADA-3212-7982-6545-2FFCD4E0BC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6669F249-C667-4EAD-AAB1-A078D558188A}
+	EndGlobalSection
+EndGlobal

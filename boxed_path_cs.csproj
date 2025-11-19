@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet Packaging Properties -->
+    <IsPackable>true</IsPackable>
+    <PackageId>Owasp.Untrust.BoxedPath</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Yariv Tal</Authors>
+    <Company>The OWASP Foundation</Company>
+    <Description>A secure path management library for .NET to prevent directory traversal and symlink jailbreak attacks.</Description>
+    <RepositoryUrl>https://github.com/owasp-untrust/boxed_path_cs</RepositoryUrl>
+    <PackageTags>owasp;security;path;symlink;jailbreak;dotdot;traversal;sandbox</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
