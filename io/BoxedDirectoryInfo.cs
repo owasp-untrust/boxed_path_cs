@@ -32,7 +32,7 @@ public class BoxedDirectoryInfo : BoxedFileSystemInfo
     {
         var directoryInfo = (DirectoryInfo)InnerInfo;
         var files = directoryInfo.GetFiles();
-        var sandbox = BoxedPath.Sandbox; 
+        var sandbox = ThePath.Sandbox; 
         
         return Array.ConvertAll(files, fileInfo => 
             new BoxedFileInfo(new BoxedAbsolute(sandbox, fileInfo.FullName))
@@ -44,7 +44,7 @@ public class BoxedDirectoryInfo : BoxedFileSystemInfo
     {
         var directoryInfo = (DirectoryInfo)InnerInfo;
         var directories = directoryInfo.GetDirectories();
-        var sandbox = BoxedPath.Sandbox;
+        var sandbox = ThePath.Sandbox;
         
         return Array.ConvertAll(directories, dirInfo => 
             new BoxedDirectoryInfo(new BoxedAbsolute(sandbox, dirInfo.FullName))

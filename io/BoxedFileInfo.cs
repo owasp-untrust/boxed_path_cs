@@ -23,6 +23,6 @@ public class BoxedFileInfo : BoxedFileSystemInfo
     public BoxedStreamReader OpenText()
     {
         // Uses the validated path from the base object to ensure a valid stream open
-        return new BoxedStreamReader(BoxedPath);
+        return new BoxedStreamReader(ThePath);
     }
 }

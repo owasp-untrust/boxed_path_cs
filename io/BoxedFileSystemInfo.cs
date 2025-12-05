@@ -10,14 +10,14 @@ namespace Owasp.Untrust.BoxedPath.IO;
 public abstract class BoxedFileSystemInfo
 {
     // These fields hold the necessary information for delegation and validation
-    protected readonly FileSystemInfo InnerInfo;
-    protected readonly BoxedPath BoxedPath;
+    protected FileSystemInfo InnerInfo { get; init; }
+    protected BoxedPath ThePath { get; init; }
 
     // The base constructor requires the BoxedPath and the underlying FileSystemInfo
     protected BoxedFileSystemInfo(BoxedPath path, FileSystemInfo innerInfo)
     {
         // The path must already be validated and exposed before this constructor is called.
-        this.BoxedPath = path;
+        this.ThePath = path;
         this.InnerInfo = innerInfo;
     }
 
@@ -28,7 +28,7 @@ public abstract class BoxedFileSystemInfo
     public virtual DateTime LastWriteTimeUtc => InnerInfo.LastWriteTimeUtc;
     
     // Securely exposes the full path via the BoxedPath property (not a string)
-    public BoxedPath FullPath => BoxedPath.FullPath;
+    public BoxedPath FullPath => ThePath.FullPath;
 
     // Securely exposes the parent directory via a BoxedDirectoryInfo wrapper
     public BoxedDirectoryInfo? Parent
@@ -36,7 +36,7 @@ public abstract class BoxedFileSystemInfo
         get
         {
             // Use the GetParent method on the BoxedPath to ensure safety
-            var parentPath = BoxedPath.Parent;
+            var parentPath = ThePath.Parent;
             
             if (parentPath is null) return null;
 
