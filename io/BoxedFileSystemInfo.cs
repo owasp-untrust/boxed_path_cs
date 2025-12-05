@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace Owasp.Untrust.BoxedPath.IO;
+namespace Owasp.Untrust.BoxedPaths.IO;
 
 /// <summary>
 /// Base class for BoxedFileInfo and BoxedDirectoryInfo.

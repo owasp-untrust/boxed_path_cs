@@ -1,8 +1,8 @@
-using Owasp.Untrust.BoxedPath;
+using Owasp.Untrust.BoxedPaths;
 using System.Security;
 using Xunit;
 
-namespace Owasp.Untrust.BoxedPath.Tests.Functional;
+namespace Owasp.Untrust.BoxedPaths.Tests.Functional;
 
 public class BoxedPathApiTests : IDisposable
 {

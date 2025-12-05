@@ -1,4 +1,4 @@
-namespace Owasp.Untrust.BoxedPath; // File-Scoped Namespace
+namespace Owasp.Untrust.BoxedPaths; // File-Scoped Namespace
 
 // C# 10 File-Scoped Namespace
 public enum SandboxJailbreak

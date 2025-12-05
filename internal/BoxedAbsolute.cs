@@ -1,7 +1,7 @@
 using System.IO;
 using System.Security;
 
-namespace Owasp.Untrust.BoxedPath.Internal;
+namespace Owasp.Untrust.BoxedPaths.Internal;
 
 /// <summary>
 /// Handles absolute paths. Validation is performed once at construction (Ingress).

@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using Xunit.Sdk;
 using System.IO;
 
-namespace Owasp.Untrust.BoxedPath.Tests;
+namespace Owasp.Untrust.BoxedPaths.Tests;
 
 public static class TestHelper
 {

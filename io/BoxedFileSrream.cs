@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace Owasp.Untrust.BoxedPath.IO;
+namespace Owasp.Untrust.BoxedPaths.IO;
 
 /// <summary>
 /// Secure wrapper for System.IO.FileStream, using inheritance for cleaner code.

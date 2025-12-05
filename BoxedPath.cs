@@ -1,9 +1,9 @@
 using System;
 using System.IO;
 using System.Security;
-using Owasp.Untrust.BoxedPath.Internal;
+using Owasp.Untrust.BoxedPaths.Internal;
 
-namespace Owasp.Untrust.BoxedPath;
+namespace Owasp.Untrust.BoxedPaths;
 
 public abstract record BoxedPath
 {

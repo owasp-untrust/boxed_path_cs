@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace Owasp.Untrust.BoxedPath.IO;
+namespace Owasp.Untrust.BoxedPaths.IO;
 
 /// <summary>
 /// Represents a file, securely wrapping System.IO.FileInfo.

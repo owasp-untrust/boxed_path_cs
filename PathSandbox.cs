@@ -1,8 +1,8 @@
 using System.IO;
-using Owasp.Untrust.BoxedPath;
-using Owasp.Untrust.BoxedPath.Internal;
+using Owasp.Untrust.BoxedPaths;
+using Owasp.Untrust.BoxedPaths.Internal;
 
-namespace Owasp.Untrust.BoxedPath;
+namespace Owasp.Untrust.BoxedPaths;
 
 public record PathSandbox
 {

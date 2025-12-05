@@ -8,13 +8,24 @@
     <!-- NuGet Packaging Properties -->
     <IsPackable>true</IsPackable>
     <PackageId>Owasp.Untrust.BoxedPath</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Authors>Yariv Tal</Authors>
     <Company>The OWASP Foundation</Company>
     <Description>A secure path management library for .NET to prevent directory traversal and symlink jailbreak attacks.</Description>
     <RepositoryUrl>https://github.com/owasp-untrust/boxed_path_cs</RepositoryUrl>
     <PackageTags>owasp;security;path;symlink;jailbreak;dotdot;traversal;sandbox</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="tests\**" />
+    <None Remove="tests\**" />
+  </ItemGroup>
 
 </Project>

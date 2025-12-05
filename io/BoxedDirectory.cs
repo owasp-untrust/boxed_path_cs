@@ -1,8 +1,8 @@
 using System;
 using System.IO;
-using Owasp.Untrust.BoxedPath.Internal;
+using Owasp.Untrust.BoxedPaths.Internal;
 
-namespace Owasp.Untrust.BoxedPath.IO;
+namespace Owasp.Untrust.BoxedPaths.IO;
 
 public static class BoxedDirectory
 {

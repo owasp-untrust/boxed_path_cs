@@ -1,8 +1,8 @@
-using Owasp.Untrust.BoxedPath;
+using Owasp.Untrust.BoxedPaths;
 using System.Security;
 using Xunit;
 
-namespace Owasp.Untrust.BoxedPath.Tests.Security;
+namespace Owasp.Untrust.BoxedPaths.Tests.Security;
 
 // Note: These tests require the test runner to have permissions to create symlinks (often admin rights on Windows)
 public class SymlinkJailbreakTests : IDisposable
