@@ -7,7 +7,8 @@ A secure path management library for .NET designed to prevent Directory Traversa
 
 ## Changes
 
-* 1.1.0 - Renamed primary class from BoxedPath to Path to avoid "class name same as namespace name" problem
+* 1.2.0 - Renamed namespace to plural Owasp.Untrust.BoxedPaths to avoid "class name same as namespace name" problem
+* 1.1.0 - [DEPRECTATED/REVERTED] ~~Renamed primary class from BoxedPath to Path to avoid "class name same as namespace name" problem~~ - !!! this change conflicts with System.IO.Path
 * 1.0.0 - First release
 
 ## The Need
@@ -52,7 +53,7 @@ dotnet add package Owasp.Untrust.BoxedPath
 Create a `PathSandbox` instance to define your secure root.
 
 ```csharp
-using Owasp.Untrust.BoxedPaths;
+using Owasp.Untrust.BoxedPaths; // note plural Path_s_
 
 // Define a sandbox rooted at "C:\Safe\Uploads"
 // Default policy: DISALLOW (Symlinks are followed but must stay inside the sandbox)
